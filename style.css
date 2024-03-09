@@ -1,0 +1,197 @@
+/*comments*/
+/*
+can see other border styles from here:
+https://www.w3schools.com/css/css_border.asp
+can see other border width from here:
+https://www.w3schools.com/cssref/pr_border-width.php
+
+*/
+body {
+  /*text-align-last: center ;aligns last line of text in center*/
+  
+ /* 
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxquhOaWwQL4n5ud05ZPfp1XmJcAfClIOEvw&usqp=CAU");
+  */
+  background-position:right top;
+  background-color:mediumslateblue;
+  opacity:1;
+}
+h1{
+  text-align:center;
+   color:floralwhite;
+   background-color:red;
+   outline-style: ridge;
+  outline-offset:10px;
+  border-width: 10px;
+  padding: 50px 30px 20px 10px;
+  text-decoration:underline;
+
+}
+#def
+{
+  background-color:magenta;
+  color:pink;
+  font-style:oblique;
+  vertical-align: center;
+   text-decoration:line-through;
+  text-transform:uppercase;
+  border-style: ridge;
+  border-width: thick medium;
+  border-radius: 10px;
+  padding: 40px;
+   
+  /* it goes in fashion top bottom:thick right left:medium*/
+  border-color: purple blue lawngreen turquoise;  
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.heading{
+  background-color:blue;
+  color:cyan;
+   letter-spacing: 10px;
+  text-transform:capitalize;
+  font-size:30px;
+  
+
+  text-decoration: overline 4px dotted  purple;
+  border-style: dotted;
+  border-width: medium;
+   font-family: sans-serif;
+   padding: 40px 10px;
+  
+}
+h1.heading{
+  background-color:lawngreen;
+  color:green;
+  border-style: groove dashed double dotted;
+  text-decoration:overline underline;
+  text-decoration-color: blanchedalmond;
+  text-decoration-style:dashed;
+  text-decoration-thickness: 10px;
+  border-width: medium 10px thick thin;
+/* it goes in fashion top right bottom left*/
+}
+/*universal effector: (*) 
+*/*{
+  text-align:right;
+}
+
+/* if we want multiple tags to have same style use comma between them and use*/ 
+h3 , p {
+  text-align:left;
+  border-left: dashed 5px white ;
+  
+
+}
+b{
+  color:coral;
+   height: 50px;
+    width:50%;
+  text-indent: 20px;
+ font-weight:normal;
+  font-size: 2em;
+}
+p{
+  margin-left:20px;
+   margin-top:20px;
+   margin-right:20px;
+   margin-bottom:20px;
+   
+  border-left-style: ridge ;
+  border-left-width:10px ;
+  color:inherit;
+  height: inherit;
+  width: inherit;
+  
+  
+ /*
+    WE CAN ALSO WRITE IT AS
+margin:20px 20px 20px 20px;
+      top right bottom left
+*/
+}
+table,th,td{
+  /*
+  display: none;
+   removes table from page 
+  visibility: :hidden; table is there but not visible
+  
+  */
+  border:2px solid black;
+  border-collapse:collapse;
+width: 50%;  
+  
+}
+tr:hover{
+  background-color:white ;
+}
+th{
+   height:30px;
+  text-align: center;
+  padding: 10px;
+}
+td{
+text-align: center;
+  padding: 10px;
+
+}
+h4 b{
+  color:springgreen
+}
+h5 > b/* isse sirf h5 ke andar wale b pe niche diye specifications lagenge in case uske andar or koi tag h jisme andar b h, toh uspe formatting nhi lagegi*/
+{
+  color:yellow
+}
+h5+em{/*
+  isme h5 ke andar wale b pe formatting nhi hogi, uske bahar adjacent wale pe hogi*/
+  color:silver;
+}
+/*
+h5 ~ em{
+  color:rosybrown;
+  isme h5 ke andar wale b pe formatting nhi hogi, uske baad wale sab  pe hogi
+}
+*/
+.dropdownbutton
+{
+  background-color: blue;
+  color:white;
+  padding: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: black 10px ;
+  cursor: pointer;
+}
+.dropdownmenu{
+  position: absolute;
+  background-color: lightblue;
+  min-width: 150px;
+  display: none;
+}
+.dropdownmenu a{
+  display: block;
+  padding: 11px 15px;
+  color: black;
+}
+.dropdown{
+  position:relative ;
+  display: inline-block;
+}
+.dropdownmenu a:hover
+{ 
+  background-color: white;
+}
+.dropdown :hover .dropdownmenu {
+  display: block;
+}
+.dropdown :hover .dropdownbutton
+{
+  background-color: darkolivegreen;
+}
+
+div[class]
+{
+  color:papayawhip
+}
+div[class="tes"]
+{
+  color:purple
+}
